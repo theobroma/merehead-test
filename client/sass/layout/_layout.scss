@@ -1,0 +1,32 @@
+/*
+# ===============================================
+# Layout
+# ===============================================
+*/
+.center-xs {
+  @include to(m) {
+    justify-content: center;
+  	text-align: center;
+  }
+}
+.center {
+	text-align: center;
+	justify-content: center;
+}
+
+.middle-xs {
+	@include to(m) {
+		align-items: center;
+  }
+}
+
+.section-title{
+	color:#414042;
+	font-size:rem(36);
+	font-family: "Lato Black";
+}
+.section-subtitle{
+	color:#414042;
+	font-size:rem(20);
+	font-family: "Lato Light";
+}

@@ -1,0 +1,153 @@
+//Header
+.header{
+	overflow:hidden;
+	color: #fff;
+}
+.nav {
+	background-color: transparent;
+	&.is-active{
+		background-color: $c-maya-blue !important;
+    opacity: 0.9;
+	}
+}
+.nav-toggle.is-active span {
+    background-color: #fff;
+}
+.nav-toggle span {
+    background-color: #fff;
+}
+.nav-toggle:hover.is-active {
+  background-color: $c-maya-blue !important;
+}
+.nav-toggle:hover{
+  background-color: transparent;
+}
+.container-navbar{
+	background-color: rgba(7,7,7,0.3);
+}
+
+.nav-item{
+	position:relative;
+	text-transform: uppercase;
+	font-family: "Open Sans Regular";
+	font-size:rem(14);
+	border-top:2px solid transparent;
+	color:#fff !important;
+	padding: 0.5rem 1.4rem;
+	@include from(t){
+		&:hover{
+			color:#4bcaff !important;
+			border-top-color:#4bcaff;
+		}
+	}
+	&:hover{
+
+
+	}
+	& .active {
+		color:#4bcaff !important;
+		border-top-color:#4bcaff;
+	}
+	@include to(m){
+		span{
+				position:relative;
+				&:after{
+					content: '';
+			    position: absolute;
+			    height: 3px;
+			    bottom: -5px;
+			    width: 100%;
+			    left: 2%;
+			    transition: ease-out 0.3s;
+				}
+		}
+		&:hover {
+			span:after{
+
+		    background-color: #fff;
+			}
+		}
+	}
+
+	@include to(m) {
+		color:#fff !important;
+		border:none !important;
+		&:hover{
+
+		}
+  }
+}
+.nav-menu{
+	@include to(m) {
+		height: 9999px;
+		background-color:$c-maya-blue;
+		opacity:0.9;
+  }
+}
+
+//Carousel
+.carousel-wrap{
+	background: url(/bg/jumbotron.png) no-repeat ;
+	min-height:500px;
+	margin:0 auto;
+	max-width: 1480px;
+}
+.carousel-item{
+
+}
+/* .slide1{
+	 background: url(/bg/jumbotron.png) no-repeat ;
+} */
+
+.slide-title{
+	font-family: "Lato Thin";
+	font-size:rem(56);
+	span{
+		font-weight: 700;
+	}
+}
+.slide-desc{
+	font-family: "Lato Light";
+	font-size: 1.25rem;
+}
+
+
+.slide-buttons{
+	margin-bottom: 50px;
+}
+.slide-icons{
+	display:flex;
+	span{
+		display:flex;
+		align-items: center;
+		font-family: "Lato Light";
+		font-size: 1.4rem;
+		color:#fff;
+	}
+	ul{
+		li{
+			display:inline-block;
+			a{
+				color:#fff;
+				background-color: #332f2b;
+				width: 50px;
+				height: 50px;
+				display:block;
+				border-radius:50%;
+				display:flex;
+				justify-content: center;
+				align-items:center;
+				font-size:1.7rem;
+				margin-left:17px;
+				i{
+					transition: ease-out 0.3s;
+				}
+				&:hover{
+					i {
+						color:$c-maya-blue;
+					}
+				}
+			}
+		}
+	}
+}
