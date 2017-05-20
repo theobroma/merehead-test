@@ -23,7 +23,7 @@
   background-color: transparent;
 }
 .container-navbar{
-	background-color: rgba(7,7,7,0.3);
+	background-color: rgba(80,80,80,0.9);
 }
 
 .nav-item{
@@ -88,12 +88,33 @@
 //Carousel
 .carousel-wrap{
 	background: url(/bg/jumbotron.png) no-repeat ;
-	min-height:500px;
+	background-size: cover;
+	min-height:800px;
 	margin:0 auto;
-	max-width: 1480px;
+	position:relative;
 }
-.carousel-item{
+.carousel-second-bg{
+	position:absolute;
+	background: url(/bg/hand.png) no-repeat ;
+	bottom:0;
+	left:0;
+	height: 604px;
+	width: 692px;
+	@include at(m) {
+		left:-370px;
+  }
+  @include at(t) {
+		left:-240px;
+  }
+}
 
+.carousel-item{
+	@include from(d) {
+		padding:225px 40px 75px 40px;
+  }
+  @include to(d) {
+		padding:40px;
+  }
 }
 /* .slide1{
 	 background: url(/bg/jumbotron.png) no-repeat ;
@@ -117,6 +138,9 @@
 }
 .slide-icons{
 	display:flex;
+	@include to(m) {
+		justify-content:center;
+  }
 	span{
 		display:flex;
 		align-items: center;

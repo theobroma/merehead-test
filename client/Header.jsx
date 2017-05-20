@@ -12,7 +12,10 @@ export default class Header extends Component {
           </div>
         </div>
         <div className="carousel-wrap">
-          <Carousel/>
+          <div className="carousel-second-bg"></div>
+          <div className="container">
+            <Carousel/>
+          </div>
         </div>
       </div>
     );
