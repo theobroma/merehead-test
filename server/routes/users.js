@@ -1,5 +1,5 @@
 import express from 'express';
-import MOCK_DATA from './../data/mock_data_users.json';
+import MOCK_DATA from './../../data/mock_data_users.json';
 
 const router = express.Router();
 

@@ -8,7 +8,7 @@ var _express = require('express');
 
 var _express2 = _interopRequireDefault(_express);
 
-var _mock_data_users = require('./../data/mock_data_users.json');
+var _mock_data_users = require('./../../data/mock_data_users.json');
 
 var _mock_data_users2 = _interopRequireDefault(_mock_data_users);
 
